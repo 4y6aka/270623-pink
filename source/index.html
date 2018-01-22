@@ -32,7 +32,7 @@
 
     <main class="page-main">
       <section class="download">
-        <button class="download__button button">Скачать приложение</button>
+        <a class="download__button button" href="#">Скачать приложение</a>
         <ul class="download__system-list">
           <li class="download__system-version">Apple</li>
           <li class="download__system-version">Android</li>
@@ -43,8 +43,8 @@
         </p>
       </section>
       <section class="slogan">
-        <h2 class="slogan__text">Устали от серости мегаполиса?</h2>
-        <h2 class="slogan__text">Нам есть, что вам предложить!</h2>
+        <p class="slogan__text">Устали от серости мегаполиса?</p>
+        <p class="slogan__text">Нам есть, что вам предложить!</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -62,6 +62,7 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+        <img class="advantages__iphone-image" src="img/iphone-screen-mobile.jpg" width="157" height="320" alt="Pink iPhone">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -81,12 +82,15 @@
       </section>
       <section class="goods">
         <div class="goods__wrapper slider">
-          <header class="goods__header">
-            <h2 class="visually-hidden">Ассортимент Pink</h2>
-            <b class="goods__name">Стандарт</b>
-            <span class="goods__price">3,99 usd</span>
-          </header>
           <table class="goods__list">
+            <thead class="goods__header">
+              <tr>
+                <th class="goods__name">Стандарт</th>
+              </tr>
+              <tr>
+                <th class="goods__price">3,99 usd</th>
+              </tr>
+            </thead>
             <tr>
               <td class="goods__feature">Розовый фильтр</td>
               <td class="goods__feature-exist"><input type="checkbox" checked></td>
@@ -112,12 +116,18 @@
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
         <p class="contacts__recourse">Остались вопросы? Свяжитесь с нами.</p>
-        <p class="contacts__text">Звоните:</p>
-        <p class="contacts__info contacts__phone">+7 (812) 555-66-66</p>
-        <p class="contacts__text">Пишите:</p>
-        <p class="contacts__info contacts__email">mail@htmlacademy.ru</p>
-        <p class="contacts__text">Приезжайте в гости:</p>
-        <p class="contacts__info contacts__adress">ул.Большая Конюшенная, 19/8</p>
+        <div class="contacts__info-block">
+          <p class="contacts__text">Звоните:</p>
+          <p class="contacts__info">+7 (812) 555-66-66</p>
+        </div>
+        <div class="contacts__info-block">
+          <p class="contacts__text">Пишите:</p>
+          <p class="contacts__info">mail@htmlacademy.ru</p>
+        </div>
+        <div class="contacts__info-block">
+          <p class="contacts__text">Приезжайте в гости:</p>
+          <p class="contacts__info">ул.Большая Конюшенная, 19/8</p>
+        </div>
       </div>
     </footer>
   </body>
