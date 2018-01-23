@@ -33,54 +33,87 @@
     <main class="page-main">
       <section class="page-title">
         <h1 class="page-title__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <p class="page-title__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
       </section>
       <section class="user-form">
         <div class="user-form__wrapper">
           <form class="user-form__form" action="#" method="post">
+            <div class="user-form__text-block">
+              <p class="user-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+            </div>
             <div class="user-form__user-name">
-              <label class="user-form__label--red" for="lastname-field">Фамилия:</label>
-              <input class="user-form__input" id="lastname-field"  name="lastname" value="Укажите фамилию *">
-              <label class="user-form__label--red" for="firstname-field">Имя:</label>
-              <input class="user-form__input" id="firstname-field"  name="firstname" value="Введите ваше имя *">
-              <label class="user-form__label--red" for="surname-field">Имя:</label>
-              <input class="user-form__input" id="surname-field"  name="surname" value="Ну и отчество тоже">
+              <div class="user-form__block-input">
+                <label class="user-form__label-input" for="lastname-field">Фамилия:</label>
+                <input class="user-form__input" id="lastname-field"  name="lastname" value="Укажите фамилию *">
+              </div>
+              <div class="user-form__block-input">
+                <label class="user-form__label-input" for="firstname-field">Имя:</label>
+                <input class="user-form__input" id="firstname-field"  name="firstname" value="Введите ваше имя *">
+              </div>
+              <div class="user-form__block-input">
+                <label class="user-form__label-input" for="surname-field">Отчество:</label>
+                <input class="user-form__input" id="surname-field"  name="surname" value="Ну и отчество тоже">
+              </div>
             </div>
             <div class="user-form__achievments">
               <p class="user-form__achievments-title form-title">Ваши безбашенные достижения в приключении</p>
-              <label class="user-form__label--black" for="shark-selfie-field">Сделал селфи с акулой</label>
-              <input class="user-form__checkbox" type="checkbox" name="shark-selfie" id="shark-selfie-field" checked>
-              <label class="user-form__label--black" for="beach-field">Обгорел на пляже</label>
-              <input class="user-form__checkbox" type="checkbox" name="beach" id="beach-field" checked>
-              <label class="user-form__label--black" for="chuck-field">Видел Сака Норриса</label>
-              <input class="user-form__checkbox" type="checkbox" name="chuck" id="chuck-field">
-              <label class="user-form__label--black" for="souvenir-field">Накупил сувениров</label>
-              <input class="user-form__checkbox" type="checkbox" name="souvenir" id="souvenir-field">
-              <label class="user-form__label--black" for="tower-field">Удержал башню</label>
-              <input class="user-form__checkbox" type="checkbox" name="tower" id="tower-field" checked>
-              <label class="user-form__label--black" for="hotel-field">Разгромил отель</label>
-              <input class="user-form__checkbox" type="checkbox" name="hotel" id="hotel-field">
+              <div class="user-form__block-checkbox">
+                <input class="user-form__checkbox" type="checkbox" name="shark-selfie" id="shark-selfie-field" checked>
+                <label class="user-form__label-checkbox" for="shark-selfie-field">Сделал селфи с акулой</label>
+              </div>
+              <div class="user-form__block-checkbox">
+                <input class="user-form__checkbox" type="checkbox" name="beach" id="beach-field" checked>
+                <label class="user-form__label-checkbox" for="beach-field">Обгорел на пляже</label>
+              </div>
+              <div class="user-form__block-checkbox">
+                <input class="user-form__checkbox" type="checkbox" name="chuck" id="chuck-field">
+                <label class="user-form__label-checkbox" for="chuck-field">Видел Сака Норриса</label>
+              </div>
+              <div class="user-form__block-checkbox">
+                <input class="user-form__checkbox" type="checkbox" name="souvenir" id="souvenir-field">
+                <label class="user-form__label-checkbox" for="souvenir-field">Накупил сувениров</label>
+              </div>
+              <div class="user-form__block-checkbox">
+                <input class="user-form__checkbox" type="checkbox" name="tower" id="tower-field" checked>
+                <label class="user-form__label-checkbox" for="tower-field">Удержал башню</label>
+              </div>
+              <div class="user-form__block-checkbox">
+                <input class="user-form__checkbox" type="checkbox" name="hotel" id="hotel-field">
+                <label class="user-form__label-checkbox" for="hotel-field">Разгромил отель</label>
+              </div>
             </div>
             <div class="user-form__contacts">
-              <label class="user-form__label--red" for="phone-field">Фамилия:</label>
-              <input class="user-form__input" id="phone-field"  name="phone" value="Номер, пожалуйста">
-              <label class="user-form__label--red" for="email-field">Фамилия:</label>
-              <input class="user-form__input" id="email-field"  name="email" value="Введите почту *">
+              <div class="user-form__block-input">
+                <label class="user-form__label-input" for="phone-field">Номер телефона:</label>
+                <input class="user-form__input" id="phone-field"  name="phone" value="Номер, пожалуйста">
+              </div>
+              <div class="user-form__block-input">
+                <label class="user-form__label-input" for="email-field">Адрес почты:</label>
+                <input class="user-form__input" id="email-field"  name="email" value="Введите почту *">
+              </div>
             </div>
             <div class="user-form__application">
               <p class="user-form__application-title form-title">С каким приложением путешествовали?</p>
-              <label class="user-form__label--black" for="ios-field">Pink для iOS</label>
-              <input class="user-form__radio" type="radio" id="ios-field"  name="ios"  checked>
-              <label class="user-form__label--black" for="android-field">Pink для Android</label>
-              <input class="user-form__radio" type="radio" id="android-field"  name="android">
-              <label class="user-form__label--black" for="windowsphone-field">Windows Phone</label>
-              <input class="user-form__radio" type="radio" id="windowsphone-field"  name="windowsphone">
+              <div class="user-form__block-radio">
+                <input class="user-form__radio" type="radio" id="ios-field"  name="ios"  checked>
+                <label class="user-form__label-radio" for="ios-field">Pink для iOS</label>
+              </div>
+              <div class="user-form__block-radio">
+                <input class="user-form__radio" type="radio" id="android-field"  name="android">
+                <label class="user-form__label-radio" for="android-field">Pink для Android</label>
+              </div>
+              <div class="user-form__block-radio">
+                <input class="user-form__radio" type="radio" id="windowsphone-field"  name="windowsphone">
+                <label class="user-form__label-radio" for="windowsphone-field">Windows Phone</label>
+              </div>
             </div>
             <div class="user-form__feedback form-title">
-              <p class="user-form__feedback-title">Опишите свои эмоции</p>
-              <textarea class="user-form__feedback-text" name="feedback " id="feedback -field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <label class="user-form__feedback-title" for="feedback-field">Опишите свои эмоции</label>
+              <textarea class="user-form__feedback-text" name="feedback " id="feedback-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
             <button class="user-form__btn-send" type="button">Отправить форму</button>
+            <small class="user-form__legend">
+              <sup>*</sup> — Обязательные поля
+            </small>
           </form>
         </div>
       </section>
