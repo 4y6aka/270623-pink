@@ -1,4 +1,5 @@
 @import "./colors.less";
+@import "./fonts.less";
 @import "./page-header.less";
 @import "./main-nav.less";
 @import "./index-title-image.less";
@@ -17,5 +18,9 @@
 @import "./form-user-form.less";
 
 body {
-  background-color: chocolate;
+  .regular-font();
+  font-size: 14px;
+  color: @grey;
+  line-height: 24px;
+  background-color: @white;
 }

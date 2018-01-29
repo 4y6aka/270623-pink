@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -84,6 +85,11 @@
                 <label class="user-form__label-checkbox" for="hotel-field">Разгромил отель</label>
               </div>
             </div>
+            <div class="user-form__popup-error">
+              <h3 class="user-form__popup-header">Что-то пошло не так!</h3>
+              <p class="user-form__popup-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+              <button class="user-form__btn-popup-error form-btn">Ок</button>
+            </div>
             <div class="user-form__contacts">
               <div class="user-form__block-input">
                 <label class="user-form__label-input" for="phone-field">Номер телефона:</label>
@@ -92,6 +98,15 @@
               <div class="user-form__block-input">
                 <label class="user-form__label-input" for="email-field">Адрес почты:</label>
                 <input class="user-form__input" id="email-field"  name="email" value="Введите почту *">
+              </div>
+            </div>
+            <div class="user-form__popup">
+              <div class="user-form__popup-text-block">
+                <h3 class="user-form__popup-header">Ваша заявка отправлена</h3>
+                <p class="user-form__popup-text">Спасибо за ваше участие. Ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+              </div>
+              <div class="user-form__popup-btn-block">
+                <button class="user-form__btn-popup form-btn">Закрыть окно</button>
               </div>
             </div>
             <div class="user-form__application">
@@ -113,7 +128,7 @@
               <label class="user-form__feedback-title" for="feedback-field">Опишите свои эмоции</label>
               <textarea class="user-form__feedback-text" name="feedback " id="feedback-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
-            <button class="user-form__btn-send" type="button">Отправить форму</button>
+            <button class="user-form__btn-send form-btn" type="button">Отправить форму</button>
             <small class="user-form__legend">
               <sup>*</sup> — Обязательные поля
             </small>
