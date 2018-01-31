@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-white-mobile.svg" width="75" height="22" alt="Pink">
+        <img class="page-header__logo-image" src="#" width="75" height="22" alt="Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -32,56 +34,60 @@
 
     <main class="page-main">
       <section class="page-title">
-        <h1 class="page-title__title">Фотографии пользователей</h1>
-        <p class="page-title__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="page-title__title-wrapper">
+          <h1 class="page-title__title">Фотографии пользователей</h1>
+        </div>
+        <div class="page-title__text-wrapper">
+          <p class="page-title__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
       </section>
       <section class="photo">
         <div class="photo__wrapper">
           <div class="photo__list">
             <div class="photo__item">
-              <img class="photo__image--panorame" src="img/panorama-mobile.jpg" width="320" height="137" alt="panorame">
+              <img class="photo__image--panorame" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorame">
               <cite class="photo__author-name">Анна</cite>
               <span class="photo__time">(5 минут назад)</span>
               <p class="photo__text">Прыгать или нет? Напишите ответ в своем комментарии и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <span class="photo__like">Нравится: 215</span>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="white car">
+              <img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="white car">
               <cite class="photo__author-name">Левон</cite>
               <span class="photo__time">(5 часов назад)</span>
               <p class="photo__text">Вчера он на Луну летал, сегодня в руки к нам попалю.</p>
               <span class="photo__like">Нравится: 356</span>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="drums">
+              <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="drums">
               <cite class="photo__author-name">Антон</cite>
               <span class="photo__time">(12 часов назад)</span>
               <p class="photo__text">Соседи будут рады!</p>
               <span class="photo__like">Нравится: 666</span>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-3-mobile.jpg" width="280" height="180" alt="big window">
+              <img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="big window">
               <cite class="photo__author-name">Борис</cite>
               <span class="photo__time">(20 часов назад)</span>
               <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <span class="photo__like">Нравится: 215</span>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="kuban market">
+              <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="kuban market">
               <cite class="photo__author-name">Сергей</cite>
               <span class="photo__time">(25 часов назад)</span>
               <p class="photo__text">Самая кубанская в мире!</p>
               <span class="photo__like">Нравится: 4</span>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-5-mobile.jpg" width="280" height="180" alt="mountains and males feet">
+              <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="mountains and males feet">
               <cite class="photo__author-name">Максим</cite>
               <span class="photo__time">(40 часов назад)</span>
               <p class="photo__text">И где снег-то?</p>
               <span class="photo__like">Нравится: 150</span>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-6-mobile.jpg" width="280" height="180" alt="airplane wing">
+              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="airplane wing">
               <cite class="photo__author-name">Надежда</cite>
               <span class="photo__time">(45 часов назад)</span>
               <p class="photo__text">Всем GM и взаимные лайки!</p>
@@ -95,7 +101,7 @@
       </section>
       <section class="upload">
         <div class="upload__wrapper">
-          <img class="upload__image" src="img/photo-7-mobile.jpg" width="280" height="374" alt="winter forest">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="winter forest">
           <ul class="upload__list">
             <li class="upload__item">1</li>
             <li class="upload__item">2</li>
@@ -118,7 +124,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logotype-blue-tablet.svg" width="147" height="40" alt="Pink">
+          <img class="page-footer__logo-image" src="#" width="147" height="40" alt="Pink">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -136,7 +142,7 @@
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано:</span>
           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy-logo.svg" width="27" height="34" alt="Htmlacademy">
+            <img src="#" width="27" height="34" alt="Htmlacademy">
           </a>
         </div>
       </div>
