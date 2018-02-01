@@ -5,4 +5,47 @@
   text-transform: uppercase;
   line-height: 32px;
   background-color: @grey;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Должно быть не здесь, потом перенесу */
+.site-list__item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 790px;
+    .regular-font();
+    line-height: 18px;
+    text-transform: none;
+  }
+
+  /* Должно быть не здесь, потом перенесу */
+  .site-list__item {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

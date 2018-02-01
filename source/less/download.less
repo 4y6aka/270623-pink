@@ -1,8 +1,16 @@
 .download {
-  padding-top: 28px;
+  padding-top: 490px;
   padding-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 210px;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: -66px;
+  background-color: @dark-grey;
+  background-image:
+    url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 175px, 0 0;
 }
 
 .download__button {
@@ -10,6 +18,14 @@
   font-size: 18px;
   color: @white;
   line-height: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.download__system-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .download__info {
@@ -17,4 +33,104 @@
   font-size: 14px;
   color: @light-grey;
   line-height: 24px;
+}
+
+.download__slogan {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    padding-top: 212px;
+    padding-bottom: 0;
+    width: 660px;
+    height: 518px;
+    margin-top: -110px;
+    background: @dark-grey;
+  }
+
+  .download__slogan-block {
+    background-color: chocolate;
+    width: 190px;
+    height: 160px;
+    margin-left: 78px;
+    margin-bottom: 38px;
+  }
+
+  .download__slogan {
+    display: block;
+    .light-font();
+    font-size: 40px;
+    color: @white;
+    text-transform: none;
+    line-height: normal;
+  }
+
+  .download__system-list {
+    background-color: chocolate;
+    height: 57px;
+    width: 206px;
+    margin-top: 45px;
+    margin-left: 66px;
+    display: flex;
+  }
+
+  .download__info {
+    font-size: 18px;
+  }
+
+  .download__info-block {
+    background-color: chocolate;
+    width: 280px;
+    height: 45px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    padding-top: 229px;
+    padding-bottom: 0;
+    width: 1200px;
+    height: 624px;
+    margin-top: -110px;
+    background: @dark-grey;
+  }
+
+  .download__slogan-block {
+    background-color: chocolate;
+    width: 238px;
+    height: 190px;
+    margin-left: 165px;
+    margin-bottom: 62px;
+  }
+
+  .download__slogan {
+    display: block;
+    .light-font();
+    font-size: 50px;
+    color: @white;
+    text-transform: none;
+    line-height: normal;
+  }
+
+  .download__system-list {
+    background-color: chocolate;
+    height: 57px;
+    width: 206px;
+    margin-top: 67px;
+    margin-left: 178px;
+    display: flex;
+  }
+
+  .download__info-block {
+    background-color: chocolate;
+    width: 300px;
+    height: 45px;
+    margin-left: 130px;
+  }
+
+  .download__info {
+    font-size: 18px;
+  }
 }
