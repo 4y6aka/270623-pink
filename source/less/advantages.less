@@ -1,5 +1,35 @@
 .advantages {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.advantages__slogan {
+  height: 218px;
+  background-color: @white;
+  padding-top: 45px;
+  padding-bottom: 32px;
+}
+
+.advantages__slogan-text {
+  .light-font();
+  font-size: 24px;
+  color: @grey;
+  line-height: normal;
+}
+
+.advantages__features {
+  height: 653px;
+  padding-top: 87px;
   background-color: @light-grey;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 80px 475px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages__title {
@@ -14,4 +44,137 @@
   font-size: 14px;
   color: black;
   line-height: 24px;
+}
+
+.advantages__britain-scientists {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 660px;
+  }
+
+  .advantages__slogan {
+    height: 240px;
+    background-color: @white;
+    padding: 0;
+    padding-top: 58px;
+  }
+
+  .advantages__slogan-small-block {
+    width: 340px;
+  }
+
+  .advantages__slogan-text {
+    .light-font();
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .advantages__features {
+    height: 485px;
+    padding-top: 48px;
+    background-color: @light-grey;
+    background-image: none;
+  }
+
+  .advantages__list {
+    margin-left: 50%;
+    margin-top: 80px;
+  }
+
+  .advantages__britain-scientists {
+    display: block;
+    height: 234px;
+    padding-top: 100px;
+    background-color: chocolate;
+  }
+
+  .advantages__britain-scientists-block {
+    margin-left: 50%;
+  }
+
+  .advantages__britain-scientists-title {
+    .bold-font();
+    font-size: 30px;
+    color: black;
+    line-height: 36px;
+  }
+
+  .advantages__britain-scientists-description {
+    .light-font();
+    font-size: 14px;
+    color: black;
+    line-height: 24px;
+  }
+
+  .advantages__britain-scientists-link {
+    .light-font();
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 1200px;
+  }
+
+  .advantages__slogan {
+    height: 325px;
+    padding: 0;
+    padding-top: 80px;
+  }
+
+  .advantages__slogan-text {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .advantages__slogan-small-block {
+    width: 440px;
+  }
+
+  .advantages__features {
+    height: 680px;
+    background-color: @light-grey;
+    background-image: none;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .advantages__item {
+    height: 195px;
+    width: 235px;
+    padding-top: 360px;
+  }
+
+  .advantages__britain-scientists {
+    display: block;
+    height: 362px;
+    //padding-top: 100px;
+  }
+
+  .advantages__britain-scientists-block {
+    margin-left: 380px;
+  }
+
+  .advantages__britain-scientists-title {
+    line-height: 30px;
+  }
+
+  .advantages__britain-scientists-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__britain-scientists-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

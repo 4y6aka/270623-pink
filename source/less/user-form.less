@@ -1,5 +1,7 @@
 .user-form {
   padding-top: 55px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .user-form__text-block {
@@ -22,6 +24,7 @@
 }
 
 .user-form__input {
+  width: 280px;
   font-size: 18px;
   color: @dark-grey;
   line-height: 30px;
@@ -113,4 +116,14 @@
   color: @white;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .user-form {
+    width: 660px;
+  }
+
+  //.user-form__block-input {
+  //  display: flex;
+  //}
 }

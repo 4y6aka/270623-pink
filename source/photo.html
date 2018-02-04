@@ -7,30 +7,32 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+  <header class="page-header">
+    <div class="page-header__header-control">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="#" width="75" height="22" alt="Pink">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a>Фотография</a>
-            </li>
-            <li class="site-list__item">
-              <a>Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a>HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <button class="page-header__toggle" type="button">Открыть меню</button>
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a>Фотография</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a>HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
     <main class="page-main">
       <section class="page-title">
@@ -43,55 +45,76 @@
       </section>
       <section class="photo">
         <div class="photo__wrapper">
-          <div class="photo__list">
-            <div class="photo__item">
-              <img class="photo__image--panorame" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorame">
+          <div class="photo__panorame-image"></div>
+          <div class="photo__panorame-item">
+            <!--<img class="photo__image&#45;&#45;panorame" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorame">-->
+            <div class="photo__panorame-text-block">
               <cite class="photo__author-name">Анна</cite>
               <span class="photo__time">(5 минут назад)</span>
               <p class="photo__text">Прыгать или нет? Напишите ответ в своем комментарии и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <span class="photo__like">Нравится: 215</span>
             </div>
+          </div>
+          <div class="photo__list">
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="white car">
-              <cite class="photo__author-name">Левон</cite>
-              <span class="photo__time">(5 часов назад)</span>
-              <p class="photo__text">Вчера он на Луну летал, сегодня в руки к нам попалю.</p>
-              <span class="photo__like">Нравится: 356</span>
+              <!--<img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="white car">-->
+              <div class="photo__image"></div>
+              <div class="photo__text-block">
+                <cite class="photo__author-name">Левон</cite>
+                <span class="photo__time">(5 часов назад)</span>
+                <p class="photo__text">Вчера он на Луну летал, сегодня в руки к нам попалю.</p>
+                <span class="photo__like">Нравится: 356</span>
+              </div>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="drums">
-              <cite class="photo__author-name">Антон</cite>
-              <span class="photo__time">(12 часов назад)</span>
-              <p class="photo__text">Соседи будут рады!</p>
-              <span class="photo__like">Нравится: 666</span>
+              <!--<img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="drums">-->
+              <div class="photo__image"></div>
+              <div class="photo__text-block">
+                <cite class="photo__author-name">Антон</cite>
+                <span class="photo__time">(12 часов назад)</span>
+                <p class="photo__text">Соседи будут рады!</p>
+                <span class="photo__like">Нравится: 666</span>
+              </div>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="big window">
-              <cite class="photo__author-name">Борис</cite>
-              <span class="photo__time">(20 часов назад)</span>
-              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <span class="photo__like">Нравится: 215</span>
+              <!--<img class="photo__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="big window">-->
+              <div class="photo__image"></div>
+              <div class="photo__text-block">
+                <cite class="photo__author-name">Борис</cite>
+                <span class="photo__time">(20 часов назад)</span>
+                <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <span class="photo__like">Нравится: 215</span>
+              </div>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="kuban market">
-              <cite class="photo__author-name">Сергей</cite>
-              <span class="photo__time">(25 часов назад)</span>
-              <p class="photo__text">Самая кубанская в мире!</p>
-              <span class="photo__like">Нравится: 4</span>
+              <!--<img class="photo__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="kuban market">-->
+              <div class="photo__image"></div>
+              <div class="photo__text-block">
+                <cite class="photo__author-name">Сергей</cite>
+                <span class="photo__time">(25 часов назад)</span>
+                <p class="photo__text">Самая кубанская в мире!</p>
+                <span class="photo__like">Нравится: 4</span>
+              </div>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="mountains and males feet">
-              <cite class="photo__author-name">Максим</cite>
-              <span class="photo__time">(40 часов назад)</span>
-              <p class="photo__text">И где снег-то?</p>
-              <span class="photo__like">Нравится: 150</span>
+              <!--<img class="photo__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="mountains and males feet">-->
+              <div class="photo__image"></div>
+              <div class="photo__text-block">
+                <cite class="photo__author-name">Максим</cite>
+                <span class="photo__time">(40 часов назад)</span>
+                <p class="photo__text">И где снег-то?</p>
+                <span class="photo__like">Нравится: 150</span>
+              </div>
             </div>
             <div class="photo__item">
-              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="airplane wing">
-              <cite class="photo__author-name">Надежда</cite>
-              <span class="photo__time">(45 часов назад)</span>
-              <p class="photo__text">Всем GM и взаимные лайки!</p>
-              <span class="photo__like">Нравится: 2560</span>
+              <!--<img class="photo__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="airplane wing">-->
+              <div class="photo__image"></div>
+              <div class="photo__text-block">
+                <cite class="photo__author-name">Надежда</cite>
+                <span class="photo__time">(45 часов назад)</span>
+                <p class="photo__text">Всем GM и взаимные лайки!</p>
+                <span class="photo__like">Нравится: 2560</span>
+              </div>
             </div>
           </div>
           <div class="photo__slogan">
@@ -100,8 +123,10 @@
         </div>
       </section>
       <section class="upload">
-        <div class="upload__wrapper">
+        <div class="upload__wrapper-image">
           <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="winter forest">
+        </div>
+        <div class="upload__wrapper-controls">
           <ul class="upload__list">
             <li class="upload__item">1</li>
             <li class="upload__item">2</li>
