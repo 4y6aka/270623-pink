@@ -44,14 +44,16 @@
         <div class="user-form__wrapper">
           <form class="user-form__form" action="#" method="post">
             <div class="user-form__text-block">
-              <p class="user-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+              <p class="user-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+                <span class="user-form__text user-form__mobile-hidden-text">Пожалуйста заполните форму ниже:</span>
+              </p>
             </div>
             <div class="user-form__user-name">
               <div class="user-form__block-input">
                 <label class="user-form__label-input" for="lastname-field">Фамилия:</label>
                 <input class="user-form__input" id="lastname-field"  name="lastname" value="Укажите фамилию *">
               </div>
-              <div class="user-form__block-input">
+              <div class="user-form__block-input baaa">
                 <label class="user-form__label-input" for="firstname-field">Имя:</label>
                 <input class="user-form__input" id="firstname-field"  name="firstname" value="Введите ваше имя *">
               </div>
@@ -93,13 +95,13 @@
               <button class="user-form__btn-popup-error user-form__form-btn">Ок</button>
             </div>
             <div class="user-form__contacts">
-              <div class="user-form__block-input">
+              <div class="user-form__block-input user-form__block-input--tablet">
                 <label class="user-form__label-input" for="phone-field">Номер телефона:</label>
-                <input class="user-form__input" id="phone-field"  name="phone" value="Номер, пожалуйста">
+                <input class="user-form__input user-form__input--tablet" id="phone-field"  name="phone" value="Номер, пожалуйста">
               </div>
-              <div class="user-form__block-input">
+              <div class="user-form__block-input user-form__block-input--tablet">
                 <label class="user-form__label-input" for="email-field">Адрес почты:</label>
-                <input class="user-form__input" id="email-field"  name="email" value="Введите почту *">
+                <input class="user-form__input user-form__input--tablet" id="email-field"  name="email" value="Введите почту *">
               </div>
             </div>
             <div class="user-form__popup">
@@ -130,10 +132,12 @@
               <label class="user-form__feedback-title" for="feedback-field">Опишите свои эмоции</label>
               <textarea class="user-form__feedback-text" name="feedback " id="feedback-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
-            <button class="user-form__btn-send user-form__form-btn" type="button">Отправить форму</button>
-            <small class="user-form__legend">
-              <sup>*</sup> — Обязательные поля
-            </small>
+            <div class="user-form__btn-block">
+              <button class="user-form__btn-send user-form__form-btn" type="button">Отправить форму</button>
+              <small class="user-form__legend">
+                <sup>*</sup> — Обязательные поля
+              </small>
+            </div>
           </form>
         </div>
       </section>
