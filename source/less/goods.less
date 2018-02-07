@@ -1,5 +1,23 @@
+.goods {
+  width: 320px;
+  margin: 0 auto;
+  height: 380px;
+  background-color: @light-grey;
+  padding-top: 90px;
+}
+
 .goods__header {
   background-color: @grey;
+}
+
+.goods__wrapper {
+  display: none;
+}
+
+.goods-list {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .goods__name {
@@ -23,4 +41,27 @@
   color: @grey;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .goods {
+    width: 660px;
+    height: 290px;
+  }
+
+  .goods__wrapper-mobile {
+    display: none;
+  }
+
+  .goods__wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .goods {
+    width: 1200px;
+    height: 375px;
+    padding-top: 150px;
+  }
 }

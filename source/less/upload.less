@@ -1,7 +1,65 @@
 .upload {
+  width: 320px;
+  margin: 0 auto;
+  background-color: @light-grey;
+}
+
+.upload__wrapper-image {
   padding-top: 20px;
   padding-bottom: 40px;
   padding-left: 20px;
-  padding-right: 20px;
-  background-color: @light-grey;
+}
+
+.upload__range-controls {
+  height: 160px;
+}
+
+.upload__btn-container {
+  height: 200px;
+}
+
+.upload__btn-post {
+  .bold-font();
+  font-size: 18px;
+  line-height: 18px;
+  color: @magenta;
+}
+
+.upload__btn-unpost {
+  .bold-font();
+  font-size: 18px;
+  line-height: 18px;
+  color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .upload {
+    width: 660px;
+    display: flex;
+  }
+
+  .upload__wrapper-image {
+    width: 330px;
+    padding-top: 57px;
+  }
+
+  .upload__wrapper-controls {
+    width: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload {
+    width: 940px;
+  }
+
+  .upload__wrapper-image {
+    width: 390px;
+    padding-top: 57px;
+    padding-left: 80px;
+  }
+
+  .upload__wrapper-controls {
+    width: 470px;
+  }
 }

@@ -1,37 +1,72 @@
 .photo {
-  font-size: 12px;
-  line-height: 24px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.photo__panorame-item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .photo__item {
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.photo__panorame-image {
+  height: 137px;
+  width: 320px;
+  margin-right: 20px;
+}
+
+.photo__image {
+  height: 180px;
+  width: 280px;
+}
+
+.photo__text-block--panorame {
+  padding-top: 16px;
+  padding-left: 17px;
+  padding-bottom: 25px;
   background-color: @light-grey;
 }
 
-.photo__item:last-child {
+.photo__text-block {
+  padding-top: 16px;
+  padding-left: 17px;
+  padding-bottom: 25px;
+  background-color: @light-grey;
+}
+
+.photo__list {
   margin-bottom: 50px;
 }
 
 .photo__author-name {
-  font-weight: bold;
+  .bold-font();
+  font-size: 14px;
+  line-height: 24px;
   color: @grey;
 }
 
 .photo__time {
-  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
   color: grey;
   text-transform: uppercase;
 }
 
 .photo__text {
-  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
   color: @grey;
 }
 
 .photo__like {
-  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
   color: @magenta;
   text-transform: uppercase;
 }
@@ -40,7 +75,81 @@
   margin-bottom: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
   color: @grey;
   background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    width: 660px;
+  }
+
+  .photo__panorame-image {
+    height: 509px;
+    width: 660px;
+  }
+
+  .photo__panorame-item {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+
+  .photo__image {
+    height: 300px;
+    width: 300px;
+  }
+
+  .photo__item {
+    width: 300px;
+  }
+
+  .photo__slogan {
+    margin-bottom: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    width: 1200px;
+  }
+
+  .photo__panorame-image {
+    height: 509px;
+    width: 1200px;
+  }
+
+  .photo__panorame-item {
+    width: 940px;
+  }
+
+  .photo__list {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 63px;
+    justify-content: space-between;
+  }
+
+  .photo__image {
+    height: 400px;
+  }
+
+  .photo__item {
+    width: 301px;
+  }
+
+  .photo__slogan {
+    margin-bottom: 63px;
+  }
 }

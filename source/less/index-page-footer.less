@@ -1,10 +1,14 @@
 .index-page-footer {
-  background-color: @white;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.index-page-footer__contacts {
   padding-top: 48px;
-  background-image:
-    url("../img/bg-map-mobile@1x.png"),
-    url("../img/bg-triangle-white-footer.svg");
+  padding-bottom: 240px;
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: 0 500px;
 }
 
 .index-page-footer__contacts-recourse {
@@ -27,4 +31,46 @@
   font-size: 24px;
   color: @magenta;
   line-height: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .index-page-footer {
+    width: 660px;
+  }
+
+  .index-page-footer__contacts-recourse {
+    font-size: 40px;
+  }
+
+  .index-page-footer__contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .index-page-footer__contacts {
+    padding-top: 55px;
+    padding-bottom: 375px;
+    background-image: url("../img/bg-map-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .index-page-footer {
+    width: 1200px;
+  }
+
+  .index-page-footer__contacts-recourse {
+    font-size: 50px;
+  }
+
+  .index-page-footer__contacts {
+    padding-top: 75px;
+    padding-bottom: 500px;
+    background-image: url("../img/bg-map-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 400px;
+  }
 }
