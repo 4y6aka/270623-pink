@@ -1,0 +1,45 @@
+.site-list__item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.site-list {
+  font-weight: bold;
+}
+
+.site-list__item {
+  display: block;
+  text-align: center;
+
+  padding-top: 16px;
+  padding-bottom: 14px;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: @grey;
+  border-top: 1px solid @border-grey;
+  border-bottom: 1px solid @black;
+}
+
+.site-list__item a {
+  &:hover {
+    color: @magenta;
+  }
+
+  &:active {
+    color: @pale-magenta;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+}

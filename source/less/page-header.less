@@ -5,21 +5,181 @@
 }
 
 .page-header__header-control {
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
+  position: relative;
   background-color: @grey;
-  width: 320px;
-  height: 70px;
+  width: 300px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 21px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid @black;
+}
+
+.page-header__logo-image img {
+  display: block;
+  width: 75px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.page-header__header-control--closed .page-header__toggle {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 50px;
+  height: 24px;
+
+  background-color: @grey;
+
+  cursor: pointer;
+  border: none;
+}
+
+.page-header__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.page-header__toggle:hover::before {
+  background-color: @magenta;
+  box-shadow: 0 10px 0 0 @magenta, 0 20px 0 0 @magenta;
+}
+
+.page-header__toggle:active::before {
+  background-color: @pale-magenta;
+  box-shadow: 0 10px 0 0 @pale-magenta, 0 20px 0 0 @pale-magenta;
+}
+
+/* Попытка сделать чрез флексы *******************************************************************/
+//.page-header__toggle {
+//  position: relative;
+//  z-index: 1;
+//
+//  display: block;
+//  width: 50px;
+//  height: 24px;
+//
+//  background-color: @grey;
+//
+//  cursor: pointer;
+//  border: none;
+//
+//  &:hover,
+//  &:active {
+//    background-color: @light-grey;
+//  }
+//}
+//
+//.page-header__toggle::before {
+//  content: "";
+//
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  z-index: 200;
+//
+//  width: 50px;
+//  height: 4px;
+//
+//  background-color: #ffffff;
+//  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+//}
+/****************************************************************************************************/
+.page-header__header-control--opened .page-header__toggle {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: @grey;
+
+  cursor: pointer;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    right: -2px;
+
+    width: 30px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @magenta;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @pale-magenta;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-header__header-control {
-    width: 660px;
-    height: 110px;
+    width: 640px;
+    padding-top: 27px;
+    padding-bottom: 51px;
+  }
+
+  .page-header__logo-image img {
+    display: block;
+    width: 150px;
+    height: 40px;
+  }
+
+  .page-header__header-control--closed .page-header__toggle {
+    top: 44px;
+  }
+
+  .page-header__header-control--opened .page-header__toggle {
+    top: 44px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__header-control {
     display: none;
+  }
+
+  .page-header__logo {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    z-index: 10;
   }
 }

@@ -17,11 +17,16 @@
   list-style: none;
 }
 
-/* Должно быть не здесь, потом перенесу */
-.site-list__item {
-  padding-top: 16px;
-  padding-bottom: 16px;
+@media (max-width: @not-desktop-width) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .main-nav {
@@ -33,19 +38,21 @@
   .main-nav {
     width: 1200px;
     .regular-font();
+    font-size: 18px;
     line-height: 18px;
-    text-transform: none;
+    text-transform: lowercase;
   }
 
-  /* Должно быть не здесь, потом перенесу */
-  .site-list__item {
-    padding-top: 46px;
-    padding-bottom: 46px;
+  .main-nav__wrapper {
+    margin-right: 130px;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .main-nav__list {
+    width: 620px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
